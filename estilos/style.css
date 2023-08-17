@@ -34,6 +34,10 @@ section#nb{
     background: url('../imagens/nb.png') no-repeat;
 }
 
+.servicos{
+    padding-top: 4%;
+}
+
 iframe#tela{
     position: relative;
     top: 57px;
@@ -53,7 +57,7 @@ iframe#tela{
     padding-left: 25px;
     list-style-type: circle;
     right: 0;
-    height: 9vh;
+    height: 8vh;
     width: 300px;
 }
 
