@@ -7,6 +7,8 @@
     font-style: normal;
 }
 
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -38,6 +40,7 @@ section#nb{
     height: 650px;
     width: 1060px;
     background: url('../imagens/nb.png') no-repeat;
+    background-size: cover;
 }
 
 #show-or-hide{
@@ -121,7 +124,6 @@ iframe#tela{
     font-weight: bold;
     font-size: 1.0em;
     padding-left: 5%;
-    list-style-type: circle;
     height: 9vh;
     width: 330px;
 }
@@ -149,4 +151,43 @@ iframe#tela{
     background-repeat: no-repeat;
     bottom: 4%;
     right: 3%;
+}
+
+@media screen and (max-width: 1440px){
+    /*MAX WIDTH = TELA MENORES QUE ALGUMA RESOULAÇÃO*/
+    section#nb{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 390px;
+        width: 636px;
+        background: url('../imagens/nb.png') no-repeat;
+        background-size: cover;
+    }
+
+    iframe#tela{
+        position: relative;
+        top: 16px;
+        left: 88px;
+        height: 297px;
+        width: 474px;
+        overflow: hidden;
+    }
+
+    #logovida{
+        position: absolute;
+        height: 77px;
+        width: 150px;
+    }
+    .link{
+        font-size: 0.8em;
+        font-weight: bolder;
+        padding-left: 5%;
+    }
+    .servicos{
+        padding-top: 7%;
+        width: 18vw;
+        height: 89.59%;
+    }
 }
