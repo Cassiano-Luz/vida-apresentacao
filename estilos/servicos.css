@@ -14,18 +14,3 @@ img{
     width: 0;
     height: 0;
 }
-
-a{
-    display: block;
-    background-color: black;
-    color: white;
-    padding: 20px;
-    font-weight: bolder;
-    text-decoration: none;
-    text-align: center;
-}
-
-a:hover{
-    background-color: white;
-    color: black;
-}

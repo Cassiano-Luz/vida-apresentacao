@@ -16,7 +16,6 @@ body{
     background-position: center center;
     background-image: url('../imagens/capa.jpg');
     background-size: cover;
-    z-index: 1;
 }
 
 main{
@@ -34,9 +33,34 @@ section#nb{
     background: url('../imagens/nb.png') no-repeat;
 }
 
-.servicos{
-    padding-top: 4%;
+#show-or-hide{
+    position: absolute;
+    top: 6%;
+    left: 15%;
+
 }
+
+.servicos{
+    display: none;
+    padding-top: 4%;
+    width: 18vw;
+    height: 92%;
+    background-color: rgba(255, 255, 255, 0.233);
+    animation: go-back 1s forwards alternate;
+}
+
+@keyframes go-back{
+    from{
+        transform: translateX(-200px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+/*transform: translateX(-100%);
+transform: translateX(0%);
+transition: 4s;*/
 
 iframe#tela{
     position: relative;
