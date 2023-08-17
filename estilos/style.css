@@ -178,11 +178,15 @@ iframe#tela{
 
 .servicos a:hover, .outros a:hover{
     color: brown;
+    transform: scale(1.05);
+    transition: 0.2s;
 }
 
 .servicos a:focus, .outros a:focus{
     color: white;
     background-color: brown;
+    transform: scale(1.05);
+    transition: 0.2s;
 }
 
 #logovida{
@@ -199,23 +203,39 @@ iframe#tela{
 
 #logoin{
     position: absolute;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     background-size: cover;
     background-image: url(../imagens/linkedin.png);
     background-repeat: no-repeat;
     background-size: cover;
-    bottom: 4%;
-    right: 2.9%;
+    bottom: 75%;
+    right: 29%;
+}
+
+#download{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    background-image: url(../imagens/nuvem.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 75%;
+    right: 32%;
+}
+
+#download:hover{
+    content: 'teste';
 }
 
 @media screen and (max-width: 1440px){
     /*MAX WIDTH = TELA MENORES QUE ALGUMA RESOULAÇÃO*/
     section#nb{
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
-        transform: translate(-40%, -50%);
+        transform: translate(-40%, -40%);
         height: 585px;
         width: 954px;
         background: url('../imagens/nb.png') no-repeat;
@@ -239,14 +259,16 @@ iframe#tela{
 
     #logovida{
         position: absolute;
-        height: 77px;
-        width: 150px;
+        height: 62px;
+        width: 120px;
     }
 
     #logoin{
-        height: 22px;
-        width: 22px;
-        bottom: 3.7%;
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        bottom: 83.4%;
+        right: 17.6%;
     }
 
     .link{
