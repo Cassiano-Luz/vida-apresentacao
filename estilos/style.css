@@ -16,6 +16,7 @@ body{
     background-position: center center;
     background-image: url('../imagens/capa.jpg');
     background-size: cover;
+    z-index: 1;
 }
 
 main{
@@ -36,9 +37,9 @@ section#nb{
 iframe#tela{
     position: relative;
     top: 57px;
-    left: 148px;
-    height: 493px;
-    width: 788px;
+    left: 147px;
+    height: 494px;
+    width: 790px;
     overflow: hidden;
 }
 
@@ -52,7 +53,7 @@ iframe#tela{
     padding-left: 25px;
     list-style-type: circle;
     right: 0;
-    height: 10vh;
+    height: 9vh;
     width: 300px;
 }
 
@@ -72,12 +73,11 @@ iframe#tela{
 
 #logovida{
     position: absolute;
-    height: 100px;
-    width: 200px;
+    height: 110px;
+    width: 215px;
     background-size: cover;
     background-image: url(../imagens/logo-vida.png);
     background-repeat: no-repeat;
     bottom: 4%;
     right: 3%;
-    z-index: 1;
 }
