@@ -45,7 +45,7 @@ section#nb{
 
 #show-or-hide{
     position: absolute;
-    top: 5%;
+    top: 2.2%;
     left: 15%;
     display: block;
     width: 100px;
@@ -86,7 +86,50 @@ section#nb{
     width: 100%;
 }
 
-.servicos{
+#show-or-hide-qs{
+    position: absolute;
+    top: 4.8%;
+    left: 28%;
+    display: block;
+    width: 100px;
+    height: px;
+    line-height: 15px;
+    font-size: 12px;
+    font-family: 'bahns','sans-serif';
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #333;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+#show-or-hide-qs span{
+    position: relative;
+    z-index: 2;
+}
+
+#show-or-hide-qs:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s;
+}
+
+#show-or-hide-qs:hover{
+    color: #fff;
+}
+
+#show-or-hide-qs:hover:after{
+    width: 100%;
+}
+
+.servicos, .outros{
     display: none;
     padding-top: 7%;
     width: 18vw;
@@ -110,7 +153,7 @@ transition: 4s;*/
 
 iframe#tela{
     position: relative;
-    top: 40px;
+    top: 3.5%;
     left: 147px;
     height: 494px;
     width: 790px;
@@ -128,16 +171,16 @@ iframe#tela{
     width: 330px;
 }
 
-.servicos a:link{
+.servicos a:link, .outros a:link{
     color: #551A8B;
     text-decoration: none;
 }
 
-.servicos a:hover{
+.servicos a:hover, .outros a:hover{
     color: brown;
 }
 
-.servicos a:focus{
+.servicos a:focus, .outros a:focus{
     color: white;
     background-color: brown;
 }
@@ -149,8 +192,21 @@ iframe#tela{
     background-size: cover;
     background-image: url(../imagens/logo-vida.png);
     background-repeat: no-repeat;
+    background-size: cover;
     bottom: 4%;
     right: 3%;
+}
+
+#logoin{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-image: url(../imagens/linkedin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 4%;
+    right: 2.9%;
 }
 
 @media screen and (max-width: 1440px){
@@ -159,19 +215,25 @@ iframe#tela{
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        height: 390px;
-        width: 636px;
+        transform: translate(-40%, -50%);
+        height: 585px;
+        width: 954px;
         background: url('../imagens/nb.png') no-repeat;
         background-size: cover;
     }
 
+    #show-or-hide{
+        position: absolute;
+        top: 4.75%;
+        left: 15%;
+    }
+
     iframe#tela{
         position: relative;
-        top: 16px;
-        left: 88px;
-        height: 297px;
-        width: 474px;
+        top: 5.7%;
+        left: 13.8%;
+        height: 447px;
+        width: 711px;
         overflow: hidden;
     }
 
@@ -180,14 +242,21 @@ iframe#tela{
         height: 77px;
         width: 150px;
     }
+
+    #logoin{
+        height: 22px;
+        width: 22px;
+        bottom: 3.7%;
+    }
+
     .link{
         font-size: 0.8em;
         font-weight: bolder;
         padding-left: 5%;
     }
-    .servicos{
+    .servicos, .outros{
         padding-top: 7%;
         width: 18vw;
-        height: 89.59%;
+        height: 87.6%;
     }
 }
