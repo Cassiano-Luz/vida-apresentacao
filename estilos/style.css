@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+@font-face{
+    font-family: 'bahns';
+    src: url('../fontes/BAHNSCHRIFT.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -35,16 +42,52 @@ section#nb{
 
 #show-or-hide{
     position: absolute;
-    top: 6%;
+    top: 5%;
     left: 15%;
+    display: block;
+    width: 100px;
+    height: px;
+    line-height: 15px;
+    font-size: 12px;
+    font-family: 'bahns','sans-serif';
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #333;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
 
+#show-or-hide span{
+    position: relative;
+    z-index: 2;
+}
+  
+#show-or-hide:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s;
+}
+  
+#show-or-hide:hover{
+    color: #fff;
+}
+  
+#show-or-hide:hover:after{
+    width: 100%;
 }
 
 .servicos{
     display: none;
-    padding-top: 4%;
+    padding-top: 7%;
     width: 18vw;
-    height: 92%;
+    height: 86%;
     background-color: rgba(255, 255, 255, 0.233);
     animation: go-back 1s forwards alternate;
 }
@@ -64,7 +107,7 @@ transition: 4s;*/
 
 iframe#tela{
     position: relative;
-    top: 57px;
+    top: 40px;
     left: 147px;
     height: 494px;
     width: 790px;
@@ -73,16 +116,14 @@ iframe#tela{
 
 .link{
     display: flex;
-    flex-direction: column;
-    justify-content: left;
     align-items: center;
+    font-family: 'bahns', Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 1.2em;
-    padding-left: 25px;
+    font-size: 1.0em;
+    padding-left: 5%;
     list-style-type: circle;
-    right: 0;
-    height: 8vh;
-    width: 300px;
+    height: 9vh;
+    width: 330px;
 }
 
 .servicos a:link{

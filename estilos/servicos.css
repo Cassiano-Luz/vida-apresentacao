@@ -14,3 +14,21 @@ img{
     width: 0;
     height: 0;
 }
+
+div.video{
+    background-color: var(--cor5);
+    margin-bottom: 30px;
+    margin: 0px -20px 30px -20px;
+    padding: 80px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+    
