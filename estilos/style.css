@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+}
+
+body{
+    background-position: center center;
+    background-image: url('../imagens/capa.jpg');
+    background-size: cover;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+}
+
+section#nb{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    height: 650px;
+    width: 1060px;
+    background: url('../imagens/nb.png') no-repeat;
+}
+
+iframe#tela{
+    position: relative;
+    top: 57px;
+    left: 148px;
+    height: 493px;
+    width: 788px;
+    overflow: hidden;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-left: 25px;
+    list-style-type: circle;
+    right: 0;
+    height: 10vh;
+    width: 300px;
+}
+
+.servicos a:link{
+    color: #551A8B;
+    text-decoration: none;
+}
+
+.servicos a:hover{
+    color: brown;
+}
+
+.servicos a:focus{
+    color: white;
+    background-color: brown;
+}
+
+#logovida{
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    background-size: cover;
+    background-image: url(../imagens/logo-vida.png);
+    background-repeat: no-repeat;
+    bottom: 4%;
+    right: 3%;
+    z-index: 1;
+}
