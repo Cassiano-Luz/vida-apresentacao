@@ -246,7 +246,7 @@ div#download:hover, div#logoin:hover{
 
     #show-or-hide{
         position: absolute;
-        top: 4.79%;
+        top: 4.7%;
         left: 15%;
     }
 
@@ -289,6 +289,6 @@ div#download:hover, div#logoin:hover{
     .servicos, .outros{
         padding-top: 7%;
         width: 18vw;
-        height: 86%;
+        height: 86vh;
     }
 }
