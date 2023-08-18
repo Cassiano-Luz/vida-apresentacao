@@ -201,39 +201,41 @@ iframe#tela{
     right: 3%;
 }
 
-#logoin{
+div#logoin{
     position: absolute;
-    height: 25px;
-    width: 25px;
+    z-index: 2;
+    height: 22px;
+    width: 22px;
     background-size: cover;
     background-image: url(../imagens/linkedin.png);
     background-repeat: no-repeat;
     background-size: cover;
-    bottom: 75%;
-    right: 29%;
+    top: 4.6%;
+    right: 11.8%;
 }
 
-#download{
+div#download{
     position: absolute;
-    height: 25px;
-    width: 25px;
+    z-index: 2;
+    height: 22px;
+    width: 22px;
     background-size: cover;
     background-image: url(../imagens/nuvem.png);
     background-repeat: no-repeat;
     background-size: cover;
-    bottom: 75%;
-    right: 32%;
+    top: 4.6%;
+    right: 16.5%;
 }
 
-#download:hover{
-    content: 'teste';
+div#download:hover, div#logoin:hover{
+    transform: scale(1.20);
 }
 
 @media screen and (max-width: 1440px){
     /*MAX WIDTH = TELA MENORES QUE ALGUMA RESOULAÇÃO*/
     section#nb{
         position: absolute;
-        top: 40%;
+        top: 37%;
         left: 50%;
         transform: translate(-40%, -40%);
         height: 585px;
@@ -267,8 +269,16 @@ iframe#tela{
         position: absolute;
         height: 20px;
         width: 20px;
-        bottom: 83.4%;
-        right: 17.6%;
+        top: 14.3%;
+        right: 18%;
+    }
+
+    #download{
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top: 14.3%;
+        right: 21%;
     }
 
     .link{
@@ -279,6 +289,6 @@ iframe#tela{
     .servicos, .outros{
         padding-top: 7%;
         width: 18vw;
-        height: 87.6%;
+        height: 87%;
     }
 }
