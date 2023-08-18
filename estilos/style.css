@@ -133,9 +133,10 @@ section#nb{
     display: none;
     padding-top: 7%;
     width: 15vw;
-    height: 80%;
+    height: 78%;
     background-color: rgba(255, 255, 255, 0.233);
     animation: go-back 1s forwards alternate;
+    z-index: 4;
 }
 
 @keyframes go-back{
