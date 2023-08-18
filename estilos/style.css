@@ -191,13 +191,13 @@ iframe#tela{
 
 #logovida{
     position: absolute;
-    height: 110px;
-    width: 215px;
+    height: 88px;
+    width: 172px;
     background-size: cover;
     background-image: url(../imagens/logo-vida.png);
     background-repeat: no-repeat;
     background-size: cover;
-    bottom: 4%;
+    bottom: 9%;
     right: 3%;
 }
 
