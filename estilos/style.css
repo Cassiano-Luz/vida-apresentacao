@@ -153,9 +153,9 @@ transition: 4s;*/
 
 iframe#tela{
     position: relative;
-    top: 3.5%;
+    top: 3.2%;
     left: 147px;
-    height: 494px;
+    height: 496px;
     width: 790px;
     overflow: hidden;
 }
