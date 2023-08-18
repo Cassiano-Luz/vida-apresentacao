@@ -246,16 +246,16 @@ div#download:hover, div#logoin:hover{
 
     #show-or-hide{
         position: absolute;
-        top: 4.75%;
+        top: 4.79%;
         left: 15%;
     }
 
     iframe#tela{
         position: relative;
-        top: 5.7%;
+        top: 5.2%;
         left: 13.8%;
-        height: 447px;
-        width: 711px;
+        height: 449px;
+        width: 712px;
         overflow: hidden;
     }
 
@@ -289,6 +289,6 @@ div#download:hover, div#logoin:hover{
     .servicos, .outros{
         padding-top: 7%;
         width: 18vw;
-        height: 87%;
+        height: 86%;
     }
 }
