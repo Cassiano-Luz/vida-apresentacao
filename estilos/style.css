@@ -132,8 +132,8 @@ section#nb{
 .servicos, .outros{
     display: none;
     padding-top: 7%;
-    width: 16vw;
-    height: 84.5%;
+    width: 15vw;
+    height: 80%;
     background-color: rgba(255, 255, 255, 0.233);
     animation: go-back 1s forwards alternate;
 }
@@ -165,7 +165,7 @@ iframe#tela{
     align-items: center;
     font-family: 'bahns', Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: 0.7em;
     padding-left: 5%;
     height: 9vh;
     width: 330px;
