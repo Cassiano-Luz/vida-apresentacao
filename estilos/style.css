@@ -232,6 +232,11 @@ div#download:hover, div#logoin:hover{
     transform: scale(1.20);
 }
 
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
 @media screen and (max-width: 1440px){
     /*MAX WIDTH = TELA MENORES QUE ALGUMA RESOULAÇÃO*/
     section#nb{
