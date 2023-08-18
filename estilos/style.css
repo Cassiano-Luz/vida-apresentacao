@@ -133,7 +133,7 @@ section#nb{
     display: none;
     padding-top: 7%;
     width: 15vw;
-    height: 78%;
+    height: 81%;
     background-color: rgba(255, 255, 255, 0.233);
     animation: go-back 1s forwards alternate;
     z-index: 4;
@@ -283,13 +283,13 @@ div#download:hover, div#logoin:hover{
     }
 
     .link{
-        font-size: 0.8em;
+        font-size: 0.6em;
         font-weight: bolder;
         padding-left: 5%;
     }
     .servicos, .outros{
         padding-top: 7%;
-        width: 18vw;
-        height: 86vh;
+        width: 13vw;
+        height: 74%;
     }
 }
