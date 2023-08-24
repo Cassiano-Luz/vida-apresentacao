@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@font-face{
+@font-face {
     font-family: 'bahns';
     src: url('../fontes/BAHNSCHRIFT.TTF') format('truetype');
     font-weight: normal;
@@ -9,19 +9,20 @@
 
 
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    }
-
-html, body{
-    height: 100vh;
-    width: 100vw;
-    
 }
 
-body{
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+body {
     background-position: center center;
     background-image: url('../imagens/capa.jpg');
     background-size: cover;
@@ -29,12 +30,12 @@ body{
     background-repeat: no-repeat;
 }
 
-main{
+main {
     position: relative;
     height: 100vh;
 }
 
-section#nb{
+section#nb {
     position: absolute;
     top: 60%;
     left: 50%;
@@ -45,7 +46,7 @@ section#nb{
     background-size: cover;
 }
 
-#show-or-hide{
+#show-or-hide {
     position: absolute;
     top: 2.2%;
     left: 15%;
@@ -54,7 +55,7 @@ section#nb{
     height: px;
     line-height: 15px;
     font-size: 12px;
-    font-family: 'bahns','sans-serif';
+    font-family: 'bahns', 'sans-serif';
     text-decoration: none;
     color: #333;
     border: 1px solid #333;
@@ -64,12 +65,12 @@ section#nb{
     transition: all .35s;
 }
 
-#show-or-hide span{
+#show-or-hide span {
     position: relative;
     z-index: 2;
 }
-  
-#show-or-hide:after{
+
+#show-or-hide:after {
     position: absolute;
     content: "";
     top: 0;
@@ -79,16 +80,16 @@ section#nb{
     background: #ff003b;
     transition: all .35s;
 }
-  
-#show-or-hide:hover{
+
+#show-or-hide:hover {
     color: #fff;
 }
-  
-#show-or-hide:hover:after{
+
+#show-or-hide:hover:after {
     width: 100%;
 }
 
-#show-or-hide-qs{
+#show-or-hide-qs {
     position: absolute;
     top: 4.8%;
     left: 28%;
@@ -97,7 +98,7 @@ section#nb{
     height: px;
     line-height: 15px;
     font-size: 12px;
-    font-family: 'bahns','sans-serif';
+    font-family: 'bahns', 'sans-serif';
     text-decoration: none;
     color: #333;
     border: 1px solid #333;
@@ -107,12 +108,12 @@ section#nb{
     transition: all .35s;
 }
 
-#show-or-hide-qs span{
+#show-or-hide-qs span {
     position: relative;
     z-index: 2;
 }
 
-#show-or-hide-qs:after{
+#show-or-hide-qs:after {
     position: absolute;
     content: "";
     top: 0;
@@ -123,15 +124,16 @@ section#nb{
     transition: all .35s;
 }
 
-#show-or-hide-qs:hover{
+#show-or-hide-qs:hover {
     color: #fff;
 }
 
-#show-or-hide-qs:hover:after{
+#show-or-hide-qs:hover:after {
     width: 100%;
 }
 
-.servicos, .outros{
+.servicos,
+.outros {
     display: none;
     padding-top: 7%;
     width: 15vw;
@@ -141,11 +143,12 @@ section#nb{
     z-index: 4;
 }
 
-@keyframes go-back{
-    from{
+@keyframes go-back {
+    from {
         transform: translateX(-200px);
     }
-    to{
+
+    to {
         transform: translateX(0);
     }
 }
@@ -154,16 +157,29 @@ section#nb{
 transform: translateX(0%);
 transition: 4s;*/
 
-iframe#tela{
+/*div#cbt {
+    position: absolute;
+    width: 40vw;
+    height: 52vh;
+    border: 5px solid yellow;
+    top: 46%;
+    left: 51.4%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}*/
+
+iframe#tela {
+    background-color: black;
     position: relative;
     top: 3.2%;
     left: 147px;
-    height: 496px;
+    height: 498px;
     width: 790px;
     overflow: hidden;
+
 }
 
-.link{
+.link {
     display: flex;
     align-items: center;
     font-family: 'bahns', Arial, Helvetica, sans-serif;
@@ -174,25 +190,28 @@ iframe#tela{
     width: 330px;
 }
 
-.servicos a:link, .outros a:link{
+.servicos a:link,
+.outros a:link {
     color: #551A8B;
     text-decoration: none;
 }
 
-.servicos a:hover, .outros a:hover{
+.servicos a:hover,
+.outros a:hover {
     color: brown;
     transform: scale(1.05);
     transition: 0.2s;
 }
 
-.servicos a:focus, .outros a:focus{
+.servicos a:focus,
+.outros a:focus {
     color: white;
     background-color: brown;
     transform: scale(1.05);
     transition: 0.2s;
 }
 
-#logovida{
+#logovida {
     position: absolute;
     height: 88px;
     width: 172px;
@@ -204,7 +223,7 @@ iframe#tela{
     right: 3%;
 }
 
-div#logoin{
+div#logoin {
     position: absolute;
     z-index: 2;
     height: 22px;
@@ -217,7 +236,7 @@ div#logoin{
     right: 11.8%;
 }
 
-div#download{
+div#download {
     position: absolute;
     z-index: 2;
     height: 22px;
@@ -230,18 +249,20 @@ div#download{
     right: 16.5%;
 }
 
-div#download:hover, div#logoin:hover{
+div#download:hover,
+div#logoin:hover {
     transform: scale(1.20);
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1440px) {
+
     /*MAX WIDTH = TELA MENORES QUE ALGUMA RESOULAÇÃO*/
-    section#nb{
+    section#nb {
         position: absolute;
         top: 37%;
         left: 50%;
@@ -252,13 +273,13 @@ div#download:hover, div#logoin:hover{
         background-size: cover;
     }
 
-    #show-or-hide{
+    #show-or-hide {
         position: absolute;
         top: 4.7%;
         left: 15%;
     }
 
-    iframe#tela{
+    iframe#tela {
         position: relative;
         top: 5.2%;
         left: 13.8%;
@@ -267,13 +288,13 @@ div#download:hover, div#logoin:hover{
         overflow: hidden;
     }
 
-    #logovida{
+    #logovida {
         position: absolute;
         height: 62px;
         width: 120px;
     }
 
-    #logoin{
+    #logoin {
         position: absolute;
         height: 20px;
         width: 20px;
@@ -281,7 +302,7 @@ div#download:hover, div#logoin:hover{
         right: 18%;
     }
 
-    #download{
+    #download {
         position: absolute;
         height: 20px;
         width: 20px;
@@ -289,12 +310,14 @@ div#download:hover, div#logoin:hover{
         right: 21%;
     }
 
-    .link{
+    .link {
         font-size: 0.6em;
         font-weight: bolder;
         padding-left: 5%;
     }
-    .servicos, .outros{
+
+    .servicos,
+    .outros {
         padding-top: 7%;
         width: 13vw;
         height: 74%;
